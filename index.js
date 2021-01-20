@@ -950,20 +950,18 @@
           <img src="${this.src}" alt="logo piedra dropa" />
           <div class="logos">
             <a href="${this.email}"
-              ><img src="/resource/svg/correo.svg" alt="email piedra dropa"
+              ><img src="resource/svg/correo.svg" alt="email piedra dropa"
             /></a>
             <a href="${this.facebook}"
-              ><img
-                src="/resource/svg/facebook.svg"
-                alt="facebook piedra dropa"
+              ><img src="resource/svg/facebook.svg" alt="facebook piedra dropa"
             /></a>
             <a href="${this.instagram}"
               ><img
-                src="/resource/svg/instagram.svg"
+                src="resource/svg/instagram.svg"
                 alt="instagram piedra dropa"
             /></a>
             <a href="${this.twitter}"
-              ><img src="/resource/svg/twitter.svg" alt="twitter piedra dropa"
+              ><img src="resource/svg/twitter.svg" alt="twitter piedra dropa"
             /></a>
           </div>
         </div>
@@ -971,7 +969,7 @@
         <div class="autor">
           <p>WEBSITE DESIGN BY</p>
           <a href="https://www.instagram.com/manuel_entrena/"
-            ><img src="/resource/svg/logo_ME.svg" alt="logo Manuel Entrena"
+            ><img src="resource/svg/logo_ME.svg" alt="logo Manuel Entrena"
           /></a>
         </div>
       </div>
