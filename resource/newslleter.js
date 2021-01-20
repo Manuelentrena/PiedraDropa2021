@@ -10,7 +10,7 @@ function cargarAnimacion() {
     rendererSettings: {
       progressiveLoad: false,
     },
-    path: "./resource/animacion.json",
+    path: "animacion.json",
   });
 }
 
