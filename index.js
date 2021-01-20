@@ -944,21 +944,33 @@
   }
 `;customElements.define("pd-footer",class extends Q{static get properties(){return{src:{type:String},instagram:{type:String},email:{type:String},twitter:{type:String},facebook:{type:String}}}static get styles(){return[Ae]}render(){return U`
       <div class="footer">
-
         <div class="footer__social">
-          <img src="${this.src}" alt="logo piedra dropa">
+          <img src="${this.src}" alt="logo piedra dropa" />
           <div class="logos">
-            <a href="${this.email}"><img src="../resource/svg/correo.svg" alt="email piedra dropa"></a>
-            <a href="${this.facebook}"><img src="../resource/svg/facebook.svg" alt="facebook piedra dropa"></a>
-            <a href="${this.instagram}"><img src="../resource/svg/instagram.svg" alt="instagram piedra dropa"></a>
-            <a href="${this.twitter}"><img src="../resource/svg/twitter.svg" alt="twitter piedra dropa"></a>
+            <a href="${this.email}"
+              ><img src="/resource/svg/correo.svg" alt="email piedra dropa"
+            /></a>
+            <a href="${this.facebook}"
+              ><img
+                src="/resource/svg/facebook.svg"
+                alt="facebook piedra dropa"
+            /></a>
+            <a href="${this.instagram}"
+              ><img
+                src="/resource/svg/instagram.svg"
+                alt="instagram piedra dropa"
+            /></a>
+            <a href="${this.twitter}"
+              ><img src="/resource/svg/twitter.svg" alt="twitter piedra dropa"
+            /></a>
           </div>
         </div>
 
         <div class="autor">
           <p>WEBSITE DESIGN BY</p>
-          <a href="https://www.instagram.com/manuel_entrena/"><img src="../resource/svg/logo_ME.svg" alt="logo Manuel Entrena"></a>
+          <a href="https://www.instagram.com/manuel_entrena/"
+            ><img src="/resource/svg/logo_ME.svg" alt="logo Manuel Entrena"
+          /></a>
         </div>
-
       </div>
     `}})})();
