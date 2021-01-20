@@ -516,7 +516,7 @@
           <ul class="ultimoDisco__list">
             <li>1. VIDAS PARALERAS</li>
             <li>2. ME DICEN</li>
-            <li>3. CÁPITAN DE LAS ESTRELLAS</li>
+            <li>3. CAPITÁN DE LAS ESTRELLAS</li>
             <li>4. TÓXICA RELACIÓN</li>
             <li>5. HABITACIÓN 203</li>
             <li>6. FEBRERO</li>
