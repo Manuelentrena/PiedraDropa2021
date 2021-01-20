@@ -1,0 +1,180 @@
+/* Border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;       
+}
+
+/* this is the "root" in "root em." */
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+/* Fuentes */
+@font-face {
+  font-family: Kodchasan-Bold;
+  src: url("../resource/fonts/Kodchasan-Bold.ttf");
+}
+
+@font-face {
+  font-family: Gruppo-Regular;
+  src: url("../resource/fonts/Gruppo-Regular.ttf");
+}
+
+@font-face {
+  font-family: Leelawadee_UI;
+  src: url("../resource/fonts/LeelawUI.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mce-error-response > a {
+  display: none;
+}
+
+.newsletter{
+  background-color: #DFDFDF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 14rem;
+}
+
+#mc_embed_signup{
+  margin: 6rem 0rem;
+}
+
+.lottie{
+  width: 40rem;
+}
+
+@media (max-width: 1200px) {
+  .newsletter{
+    flex-direction: column;
+  }
+  .lottie{
+    width: auto;
+    margin-top: -10rem;
+  }
+}
+
+#mc_embed_signup_scroll p{
+  color: #3B3B3D;
+  font: bold 2.5rem Kodchasan-Bold;
+  margin: 0 0 2rem 0;
+}
+
+#mc_embed_signup_scroll h2{
+  color: #FF6F00;
+  font: bold 3rem Kodchasan-Bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .newsletter{
+    padding: 0rem 3rem;
+  }
+  #mc_embed_signup_scroll p{
+    font-size: 1.6rem !important;
+  }
+  #mc_embed_signup_scroll h2{
+    font-size: 2.4rem !important;
+    margin-bottom: 1rem;
+  }
+}
+
+.form_container{
+  display: flex;
+}
+
+
+
+#mce-EMAIL{
+  height: 6.3rem;
+  width: 40vw;
+  border: 0.3rem solid #FF6F00;
+  padding-left: 3rem;
+  font: bold 2rem Leelawadee_UI;
+  outline:none;
+  margin-right: 4rem;
+}
+
+#mce-EMAIL ~ div{
+  margin-top: 3rem !important;
+  padding: 1.5rem 0rem !important;
+  height: 6.3rem;
+  width: 40vw;
+  background-color: #A02C32 !important;
+  font: bold 2rem Leelawadee_UI;
+  text-align: center;
+}
+
+#mc-embedded-subscribe{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  font: 2.5rem Leelawadee_UI;
+  border: #FF6F00 solid 0.3rem;
+  background-color: #FF6F00;
+  padding: 1.2rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  height: 6.3rem;
+  z-index: 1;
+}
+
+#mc-embedded-subscribe:hover{
+  background-color: #FF9747;
+  border-color: #FF9747;
+  cursor: pointer;
+  height: 6.3rem;
+}
+
+#mce-error-response,#mce-success-response{
+  margin-top: 3rem !important;
+  padding: 1.5rem 0rem !important;
+  height: 6.3rem;
+  width: 40vw;
+  font: bold 2rem Leelawadee_UI;
+  text-align: center;
+}
+
+#mce-error-response{
+  background-color: #CDB430 !important;
+}
+
+#mce-success-response{
+  background-color: #47BF6D !important;
+}
+
+@media (max-width: 768px) {
+  .form_container{
+    flex-direction: column;
+  }
+  #mce-EMAIL{
+    width: 100%;
+    font-size: 1.6rem !important;
+  }
+
+  #mce-EMAIL ~ div{
+    width: 100%;
+  }
+  #mc-embedded-subscribe{
+    margin-top: 3rem;
+  }
+  #mce-EMAIL ~ div{
+    padding: 1.9rem 0 0 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 1.6rem !important;
+  }
+  #mce-error-response,#mce-success-response{
+    width: 100%;
+    font-size: 1.6rem !important;
+  }
+}
+
+
