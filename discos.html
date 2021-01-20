@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <!-- METADATOS -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Manuel Entrena">
-  <meta name="description" content="Página Web Oficial del grupo Piedra Dropa. Nuevo Disco VIVIR EN SOCIEDAD ya a la venta.">
-  <!-- TITTLE -->
-  <title>Piedra Dropa</title>
-  <!-- ESTILOS GENERALES -->
-  <link rel="stylesheet" href="../css/style.css">
-  <!-- SCRIPTS COMPONENTS -->
+  <head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Manuel Entrena" />
+    <meta
+      name="description"
+      content="Página Web Oficial del grupo Piedra Dropa. Nuevo Disco VIVIR EN SOCIEDAD ya a la venta."
+    />
+    <!-- TITTLE -->
+    <title>Piedra Dropa</title>
+    <!-- ESTILOS GENERALES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- SCRIPTS COMPONENTS -->
 
-<!--   <script src="../src/components/header/pd-header.js" type="module"></script>
+    <!--   <script src="../src/components/header/pd-header.js" type="module"></script>
   <script src="../src/components/separatorColor/pd-separator.js" type="module"></script>
   <script src="../src/components/sectionInstagram/pd-instagram.js" type="module"></script>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -21,69 +24,84 @@
   <script src="../src/components/disco/pd-disco.js" type="module"></script>
   <script src="../resource/lottie.js"></script> -->
 
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <script src="discos.js"></script>
- <script src="../resource/lottie.js"></script>
-  
-</head>
-<body>
-  <!-- CABEZERA COMPONENTS -->
-  <pd-header src="../resource/svg/logo principal.svg"></pd-header>
-  <pd-discos></pd-discos>
-  <pd-instagram instagram="@piedradropaoficial"></pd-instagram>
-  <pd-separator></pd-separator>
-  <div class="elfsight-app-d25b470e-6eca-417d-8e2f-9a2b0d568493"></div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="discos.js"></script>
+    <script src="resource/lottie.js"></script>
+  </head>
+  <body>
+    <!-- CABEZERA COMPONENTS -->
+    <pd-header src="resource/svg/logo principal.svg"></pd-header>
+    <pd-discos></pd-discos>
+    <pd-instagram instagram="@piedradropaoficial"></pd-instagram>
+    <pd-separator></pd-separator>
+    <div class="elfsight-app-d25b470e-6eca-417d-8e2f-9a2b0d568493"></div>
 
     <!-- NEWSLETTER -->
 
-  <div class="newsletter">
+    <div class="newsletter">
+      <!-- MAILCHIMP -->
+      <div class="form" id="mc_embed_signup">
+        <form
+          action="https://piedradropa.us7.list-manage.com/subscribe/post?u=031547978137ec919863c3acf&amp;id=37abbbc222"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2>SE PARTE DE PIEDRA DROPA</h2>
+            <p>Inscríbete para saber lo último sobre el grupo</p>
 
-    <!-- MAILCHIMP -->
-    <div class="form" id="mc_embed_signup">
-      <form action="https://piedradropa.us7.list-manage.com/subscribe/post?u=031547978137ec919863c3acf&amp;id=37abbbc222" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <h2>SE PARTE DE PIEDRA DROPA</h2>
-          <p>Inscríbete para saber lo último sobre el grupo</p>
-          
-          <div class="form_container">
-            <div class="mc-field-group" id="mc-field-group">
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Ingresa tu email..."/>
+            <div class="form_container">
+              <div class="mc-field-group" id="mc-field-group">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                  placeholder="Ingresa tu email..."
+                />
+              </div>
+              <input
+                type="submit"
+                value="UNIRSE"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="boton"
+              />
             </div>
-            <input type="submit" value="UNIRSE" name="subscribe" id="mc-embedded-subscribe" class="boton"/>
-          </div>
 
-          <div id="mce-responses" class="clear">
-              <div id="mce-error-response" style="display: none;"></div>
-              <div id="mce-success-response" style="display: none;"></div>
+            <div id="mce-responses" class="clear">
+              <div id="mce-error-response" style="display: none"></div>
+              <div id="mce-success-response" style="display: none"></div>
+            </div>
           </div>
-          
-        </div>
-      </form>
+        </form>
+      </div>
+
+      <!-- LOTTIE -->
+      <div class="lottie"></div>
     </div>
 
-    <!-- LOTTIE -->
-    <div class="lottie">
+    <!-- FIN NEWSLETTER -->
+    <pd-separator></pd-separator>
+    <pd-footer
+      src="resource/svg/logo principal.svg"
+      instagram="https://www.instagram.com/piedradropaoficial"
+      email="contacto.html"
+      twitter="https://twitter.com/piedradropa"
+      facebook="https://www.facebook.com/PiedraDropa/"
+    >
+    </pd-footer>
 
-    </div>
-
-  </div>
-
-<!-- FIN NEWSLETTER -->
-  <pd-separator></pd-separator>
-  <pd-footer
-    src="../resource/svg/logo principal.svg"
-    instagram = "https://www.instagram.com/piedradropaoficial"
-    email = "../contacto.html"
-    twitter= "https://twitter.com/piedradropa"
-    facebook= "https://www.facebook.com/PiedraDropa/">
-  </pd-footer>
-
-
-  <!-- SCRIPTS -->
-  <script
-    type="text/javascript"
-    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-  ></script>
-  <script src="../resource/newslleter.js"></script>
-</body>
+    <!-- SCRIPTS -->
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script src="resource/newslleter.js"></script>
+  </body>
 </html>

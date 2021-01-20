@@ -201,7 +201,7 @@
       <header class="menu">
         <nav class="menu__nav">
           <div class="menu__picture">
-            <a href="/index.html"
+            <a href="index.html"
               ><img
                 class="menu__logo"
                 src="${this.src}"
@@ -210,10 +210,10 @@
           </div>
 
           <ul class="menu__ul">
-            <li><a href="/discos.html">DISCOS</a></li>
-            <li><a href="/tour.html">TOUR</a></li>
-            <li><a href="/miembros.html">MIEMBROS</a></li>
-            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="discos.html">DISCOS</a></li>
+            <li><a href="tour.html">TOUR</a></li>
+            <li><a href="miembros.html">MIEMBROS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
           </ul>
 
           <div class="menu-btn" @click="${this._handleClickBurguer}">
@@ -321,7 +321,7 @@
   .footer {
     background-color: ${ie};
     width: 100%;
-    background-image: url("/resource/svg/textura2.svg");
+    background-image: url("resource/svg/textura2.svg");
   }
 
   .footer__social {

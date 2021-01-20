@@ -201,7 +201,7 @@
       <header class="menu">
         <nav class="menu__nav">
           <div class="menu__picture">
-            <a href="/index.html"
+            <a href="index.html"
               ><img
                 class="menu__logo"
                 src="${this.src}"
@@ -210,10 +210,10 @@
           </div>
 
           <ul class="menu__ul">
-            <li><a href="/discos.html">DISCOS</a></li>
-            <li><a href="/tour.html">TOUR</a></li>
-            <li><a href="/miembros.html">MIEMBROS</a></li>
-            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="discos.html">DISCOS</a></li>
+            <li><a href="tour.html">TOUR</a></li>
+            <li><a href="miembros.html">MIEMBROS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
           </ul>
 
           <div class="menu-btn" @click="${this._handleClickBurguer}">
@@ -321,7 +321,7 @@
   .footer {
     background-color: ${ie};
     width: 100%;
-    background-image: url("/resource/svg/textura2.svg");
+    background-image: url("resource/svg/textura2.svg");
   }
 
   .footer__social {
@@ -598,15 +598,19 @@
 `;customElements.define("pd-miembro",class extends K{static get properties(){return{img:{type:String},img_mobil:{type:String},name:{type:String},type:{type:String},color:{type:String},instagram:{type:String}}}static get styles(){return[fe]}render(){return I`
       <div class="container">
         <picture>
-          <source srcset="${this.img_mobil}" media="(max-width: 768px)">
-          <source srcset="${this.img_mobil}">
-          <img class="img" srcset="${this.img}" alt="${this.name}">
+          <source srcset="${this.img_mobil}" media="(max-width: 768px)" />
+          <source srcset="${this.img_mobil}" />
+          <img class="img" srcset="${this.img}" alt="${this.name}" />
         </picture>
         <div class="overlay ${this.color}">
           <div>
             <p>${this.name.toUpperCase()}</p>
             <p>${this.type.toUpperCase()}</p>
-            <a href="${this.instagram}"><img src="../resource/svg/instagram.svg" alt="instagram piedra dropa"></a>
+            <a href="${this.instagram}"
+              ><img
+                src="resource/svg/instagram.svg"
+                alt="instagram piedra dropa"
+            /></a>
           </div>
         </div>
       </div>
