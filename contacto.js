@@ -200,22 +200,25 @@
 `;customElements.define("pd-header",class extends K{static get properties(){return{src:{type:String}}}static get styles(){return[ue]}render(){return O`
       <header class="menu">
         <nav class="menu__nav">
-
           <div class="menu__picture">
-            <a href="../index.html"><img class="menu__logo" src="${this.src}" alt="Logo Piedra Dropa"></a>
+            <a href="/index.html"
+              ><img
+                class="menu__logo"
+                src="${this.src}"
+                alt="Logo Piedra Dropa"
+            /></a>
           </div>
 
           <ul class="menu__ul">
-            <li><a href="../discos.html">DISCOS</a></li>
-            <li><a href="../tour.html">TOUR</a></li>
-            <li><a href="../miembros.html">MIEMBROS</a></li>
-            <li><a href="../contacto.html">CONTACTO</a></li>
+            <li><a href="/discos.html">DISCOS</a></li>
+            <li><a href="/tour.html">TOUR</a></li>
+            <li><a href="/miembros.html">MIEMBROS</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
           </ul>
 
           <div class="menu-btn" @click="${this._handleClickBurguer}">
             <div class="menu-btn__burger"></div>
           </div>
-
         </nav>
 
         <div class="header__colors">
@@ -224,7 +227,6 @@
           <div></div>
           <div></div>
         </div>
-
       </header>
     `}_handleClickBurguer(){const e=this.shadowRoot.childNodes[2].childNodes[1];e.childNodes[5].classList.toggle("open"),e.childNodes[3].classList.toggle("openNav")}});const me=Q`
   .colores{
@@ -316,30 +318,29 @@
         </a>
       </div>
     `}});const _e=Q`
-  .footer{
+  .footer {
     background-color: ${ie};
     width: 100%;
-    background-image: url("../resource/svg/textura2.svg");
+    background-image: url("/resource/svg/textura2.svg");
   }
 
-  .footer__social{
+  .footer__social {
     max-width: 30rem;
     margin: 0 auto;
     padding: 6rem 0rem;
   }
 
-  .footer__social img{
+  .footer__social img {
     width: 100%;
     height: auto;
   }
 
-
-  .logos{
+  .logos {
     text-align: center;
     margin: 2rem 0 0 0;
   }
 
-  .logos a{
+  .logos a {
     display: inline-block;
     background-color: ${re};
     min-width: 4rem;
@@ -348,12 +349,12 @@
     margin: 0 0.5rem;
   }
 
-  .logos a:hover{
+  .logos a:hover {
     cursor: pointer;
     background-color: ${ne};
   }
 
-  .logos img{
+  .logos img {
     max-width: 2.5rem;
     max-height: 2.5rem;
     padding: 1rem;
@@ -362,38 +363,50 @@
   .autor {
     background-color: ${re};
     border: 0.3rem solid ${te};
-    text-align: center; 
+    text-align: center;
     padding: 2rem;
   }
 
-  .autor p:nth-child(1){
+  .autor p:nth-child(1) {
     font: normal 1rem Leelawadee_UI;
     color: ${ee};
     margin: 0 0 1rem 0;
   }
 
-  .autor a img{
+  .autor a img {
     width: 7rem;
     height: auto;
   }
 `;customElements.define("pd-footer",class extends K{static get properties(){return{src:{type:String},instagram:{type:String},email:{type:String},twitter:{type:String},facebook:{type:String}}}static get styles(){return[_e]}render(){return O`
       <div class="footer">
-
         <div class="footer__social">
-          <img src="${this.src}" alt="logo piedra dropa">
+          <img src="${this.src}" alt="logo piedra dropa" />
           <div class="logos">
-            <a href="${this.email}"><img src="../resource/svg/correo.svg" alt="email piedra dropa"></a>
-            <a href="${this.facebook}"><img src="../resource/svg/facebook.svg" alt="facebook piedra dropa"></a>
-            <a href="${this.instagram}"><img src="../resource/svg/instagram.svg" alt="instagram piedra dropa"></a>
-            <a href="${this.twitter}"><img src="../resource/svg/twitter.svg" alt="twitter piedra dropa"></a>
+            <a href="${this.email}"
+              ><img src="/resource/svg/correo.svg" alt="email piedra dropa"
+            /></a>
+            <a href="${this.facebook}"
+              ><img
+                src="/resource/svg/facebook.svg"
+                alt="facebook piedra dropa"
+            /></a>
+            <a href="${this.instagram}"
+              ><img
+                src="/resource/svg/instagram.svg"
+                alt="instagram piedra dropa"
+            /></a>
+            <a href="${this.twitter}"
+              ><img src="/resource/svg/twitter.svg" alt="twitter piedra dropa"
+            /></a>
           </div>
         </div>
 
         <div class="autor">
           <p>WEBSITE DESIGN BY</p>
-          <a href="https://www.instagram.com/manuel_entrena/"><img src="../resource/svg/logo_ME.svg" alt="logo Manuel Entrena"></a>
+          <a href="https://www.instagram.com/manuel_entrena/"
+            ><img src="/resource/svg/logo_ME.svg" alt="logo Manuel Entrena"
+          /></a>
         </div>
-
       </div>
     `}});const fe=Q`
   .contacto{
@@ -548,34 +561,64 @@
           <h1>CONTACTO</h1>
           <div class="container">
             <div class="section_form">
-                <form id="myform" action="https://formsubmit.co/ed5a8bfac3c398ad8b83de40a1c32bf3" method="POST" enctype = "multipart/form-data">
+              <form
+                id="myform"
+                action="https://formsubmit.co/ed5a8bfac3c398ad8b83de40a1c32bf3"
+                method="POST"
+                enctype="multipart/form-data"
+              >
+                <label for="name">TU NOMBRE (Requerido)</label>
+                <input
+                  class="form-imput"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Introduce tu nombre..."
+                  required
+                />
 
-                  <label for="name">TU NOMBRE (Requerido)</label>
-                  <input class="form-imput" type="text" id="name" name="name" placeholder="Introduce tu nombre..." required>
+                <label for="email">TU EMAIL (Requerido)</label>
+                <input
+                  class="form-imput"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Introduce tu correo..."
+                  required
+                />
 
-                  <label for="email">TU EMAIL (Requerido)</label>
-                  <input class="form-imput" type="email" id="email" name="email" placeholder="Introduce tu correo..." required>
+                <label for="text">TU MENSAJE</label>
+                <textarea class="form-imput" name="text" rows="5"> </textarea>
 
-                  <label for="text">TU MENSAJE</label>
-                  <textarea class="form-imput" name="text" rows="5"> </textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" style="display:none" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:8081/contacto.html"
+                />
 
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="text" name="_honey" style="display:none">
-                  <input type="hidden" name="_next" value="http://127.0.0.1:8081/contacto.html">
-
-                  <pd-boton text="ENVIAR" link="#" widthFull=1 @click="${this._handleClickform}"></pd-boton>
-
-                </form>
-                <div class="mensaje"></div>
+                <pd-boton
+                  text="ENVIAR"
+                  link="#"
+                  widthFull="1"
+                  @click="${this._handleClickform}"
+                ></pd-boton>
+              </form>
+              <div class="mensaje"></div>
             </div>
             <div class="section_info">
-              <p class="text_naranja">CORREO<p>
+              <p class="text_naranja">CORREO</p>
+              <p></p>
               <p class="text_blanco">piedradropa@gmail.com</p>
               <p class="text_naranja">MERCHANDISING</p>
               <p class="text_blanco">Llamar al teléfono: &nbsp 681 08 37 21</p>
               <p class="text_naranja">WEBMASTER</p>
               <p class="text_blanco">manuel.entrena@gmail.com</p>
-              <img src="../resource/svg/logo_secundario.svg" alt="logo piedra dropa">
+              <img
+                src="/resource/svg/logo_secundario.svg"
+                alt="logo piedra dropa"
+              />
             </div>
           </div>
         </div>

@@ -200,22 +200,25 @@
 `;customElements.define("pd-header",class extends Q{static get properties(){return{src:{type:String}}}static get styles(){return[ge]}render(){return U`
       <header class="menu">
         <nav class="menu__nav">
-
           <div class="menu__picture">
-            <a href="../index.html"><img class="menu__logo" src="${this.src}" alt="Logo Piedra Dropa"></a>
+            <a href="/index.html"
+              ><img
+                class="menu__logo"
+                src="${this.src}"
+                alt="Logo Piedra Dropa"
+            /></a>
           </div>
 
           <ul class="menu__ul">
-            <li><a href="../discos.html">DISCOS</a></li>
-            <li><a href="../tour.html">TOUR</a></li>
-            <li><a href="../miembros.html">MIEMBROS</a></li>
-            <li><a href="../contacto.html">CONTACTO</a></li>
+            <li><a href="/discos.html">DISCOS</a></li>
+            <li><a href="/tour.html">TOUR</a></li>
+            <li><a href="/miembros.html">MIEMBROS</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
           </ul>
 
           <div class="menu-btn" @click="${this._handleClickBurguer}">
             <div class="menu-btn__burger"></div>
           </div>
-
         </nav>
 
         <div class="header__colors">
@@ -224,7 +227,6 @@
           <div></div>
           <div></div>
         </div>
-
       </header>
     `}_handleClickBurguer(){const e=this.shadowRoot.childNodes[2].childNodes[1];e.childNodes[5].classList.toggle("open"),e.childNodes[3].classList.toggle("openNav")}});const _e=X`
 
@@ -519,7 +521,7 @@
             <li>5. HABITACIÓN 203</li>
             <li>6. FEBRERO</li>
           </ul>
-          <pd-boton text="COMPRAR ÁLBUM" link="../contacto.html"></pd-boton>
+          <pd-boton text="COMPRAR ÁLBUM" link="/contacto.html"></pd-boton>
         </div>
       </div>
     `}}),customElements.define("pd-spotify",class extends Q{static get properties(){return{id:{type:String},mode:{type:String}}}render(){return U`
@@ -719,16 +721,17 @@
 
 `;customElements.define("pd-youtubevideo",class extends Q{static get properties(){return{id:{type:String}}}static get styles(){return[we]}render(){return U`
       <iframe
-        class="video" 
-        src="https://www.youtube.com/embed/${this.id}" 
-        frameborder="0" 
+        class="video"
+        src="https://www.youtube.com/embed/${this.id}"
+        frameborder="0"
         allow="accelerometer; 
         autoplay; 
         clipboard-write; 
         encrypted-media; 
         gyroscope; 
-        picture-in-picture" 
-        allowfullscreen>
+        picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     `}});const Se=X`
   .colores{
@@ -882,30 +885,29 @@
         </a>
       </div>
     `}});const Ae=X`
-  .footer{
+  .footer {
     background-color: ${se};
     width: 100%;
-    background-image: url("../resource/svg/textura2.svg");
+    background-image: url("/resource/svg/textura2.svg");
   }
 
-  .footer__social{
+  .footer__social {
     max-width: 30rem;
     margin: 0 auto;
     padding: 6rem 0rem;
   }
 
-  .footer__social img{
+  .footer__social img {
     width: 100%;
     height: auto;
   }
 
-
-  .logos{
+  .logos {
     text-align: center;
     margin: 2rem 0 0 0;
   }
 
-  .logos a{
+  .logos a {
     display: inline-block;
     background-color: ${ie};
     min-width: 4rem;
@@ -914,12 +916,12 @@
     margin: 0 0.5rem;
   }
 
-  .logos a:hover{
+  .logos a:hover {
     cursor: pointer;
     background-color: ${ne};
   }
 
-  .logos img{
+  .logos img {
     max-width: 2.5rem;
     max-height: 2.5rem;
     padding: 1rem;
@@ -928,17 +930,17 @@
   .autor {
     background-color: ${ie};
     border: 0.3rem solid ${te};
-    text-align: center; 
+    text-align: center;
     padding: 2rem;
   }
 
-  .autor p:nth-child(1){
+  .autor p:nth-child(1) {
     font: normal 1rem Leelawadee_UI;
     color: ${ee};
     margin: 0 0 1rem 0;
   }
 
-  .autor a img{
+  .autor a img {
     width: 7rem;
     height: auto;
   }
